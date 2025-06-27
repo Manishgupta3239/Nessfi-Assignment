@@ -1,10 +1,10 @@
-# 🛍️ E-Commerce Product Catalog Application
+#  E-Commerce Product Catalog Application
 
 This is a full-stack e-commerce product catalog system developed as part of an interview assignment. It includes secure user authentication, product management via a RESTful API, and a React-based frontend with Tailwind styling.
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose
 - **Auth:** JWT (JSON Web Tokens)
@@ -15,12 +15,12 @@ This is a full-stack e-commerce product catalog system developed as part of an i
 
 ## ✨ Features
 
-### 🔐 Authentication
+###  Authentication
 - User Signup/Login with JWT
 - Protected routes on backend & frontend
 - Logout functionality
 
-### 📦 Product Catalog
+###  Product Catalog
 - CRUD Operations on products
 - Pagination with `?page=1&limit=5`
 - Validation for all required fields
@@ -28,7 +28,7 @@ This is a full-stack e-commerce product catalog system developed as part of an i
 
 ---
 
-## 🗂️ Folder Structure
+##  Folder Structure
 
 Assignment/
 ├── backend/
@@ -51,9 +51,9 @@ Assignment/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 📌 Backend Setup
+##  Backend Setup
 
 ```bash
 cd backend
@@ -65,7 +65,7 @@ JWT_SECRET=4eff0af50e4e6ef15b94ae2cdd0683f6e7fc6dcd5c7867b968d1d9b05809078e66a65
 
 npm run dev
 
-💻 Frontend Setup
+## Frontend Setup
 
 cd frontend
 npm install
@@ -73,14 +73,14 @@ npm run dev
 Runs at: http://localhost:5173
 
 
-📬 API Endpoints
+ API Endpoints
 
-🔐 Auth
+ Auth
 POST /api/auth/register
 
 POST /api/auth/login
 
-📦 Products
+ Products
 POST /api/products
 
 GET /api/products?page=1&limit=5
