@@ -1,0 +1,72 @@
+### signup
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+    "name":"manish",
+    "email":"guptamanish3239@gmail.com",
+    "password":"Mani123@"
+}
+
+### login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"guptamanish3239@gmail.com",
+    "password":"Mani123@"
+}
+
+### logout
+GET  http://localhost:3000/api/auth/logout
+
+
+### create products
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+
+{ 
+    "name" : "dks",
+    "description" :"fsdsdflfds",
+    "price": 5000,
+    "currency":"INR",
+    "category":"shoes",
+    "brand":"nike",
+    "sku":"nike 1000 kjlerw",
+     "stock_quantity": 100,
+     "images":"",
+     "tags" :"",
+     "is_active" : true
+}
+
+### get all products
+GET http://localhost:3000/api/products/
+
+
+### get product by id 
+GET http://localhost:3000/api/products/685dca4d75061812b06de07b
+
+
+### update product
+PUT http://localhost:3000/api/products/685dca4d75061812b06de07b
+Content-Type: application/json
+
+{ 
+    "name" : "dks",
+    "description" :"fsdsdflfds",
+    "price": 5000,
+    "currency":"INR",
+    "category":"shoes",
+    "brand":"nike",
+    "sku":"nike oierpor",
+     "stock_quantity": 100,
+     "images":"",
+     "tags" :"",
+     "is_active" : true
+}
+
+### delete product
+DELETE http://localhost:3000/api/products/685dca4d75061812b06de07b
+
+###
+GET http://localhost:3000/api/auth/authenticate/
