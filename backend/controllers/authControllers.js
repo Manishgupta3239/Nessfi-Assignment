@@ -46,7 +46,7 @@ export async function login(req, res) {
     // httpOnly: true,
     // secure: true,
     // sameSite: "Strict",
-    maxAge: 60 * 60 * 1000, // 1 hour
+    maxAge: 60 * 60 * 1000, 
     });
 
     return res.status(200).json({success:true ,message: "logged in" , name:user.name , email:user.email } )
