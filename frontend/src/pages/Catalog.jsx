@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Catalog() {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
-  const [limit] = useState(5); 
+  const [limit] = useState(3); 
   const [total, setTotal] = useState(0);
   const navigate = useNavigate();
 
@@ -54,12 +54,7 @@ export default function Catalog() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6 relative">
-      <button
-        onClick={handleLogout}
-        className="absolute top-4 right-0 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-      >
-        Logout
-      </button>
+     
 
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-bold">Product Catalog</h2>
@@ -70,7 +65,12 @@ export default function Catalog() {
           + Add Product
         </button>
       </div>
-
+ <button
+        onClick={handleLogout}
+        className=" top-4  bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+      >
+        Logout
+      </button>
 
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
