@@ -12,7 +12,7 @@ function App() {
   const{verify ,  isAuthenticated} = useAuthStore();
     useEffect(() => {
     verify();
-    }, [])
+    }, [verify])
 
   return (
     <Router>

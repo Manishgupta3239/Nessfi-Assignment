@@ -1,5 +1,5 @@
 ### signup
-POST http://localhost:3000/api/auth/signup
+POST https://nessfi-assignment.onrender.com/api/auth/signup
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### login
-POST http://localhost:3000/api/auth/login
+POST https://nessfi-assignment.onrender.com/api/auth/login
 Content-Type: application/json
 
 {
@@ -18,11 +18,11 @@ Content-Type: application/json
 }
 
 ### logout
-GET  http://localhost:3000/api/auth/logout
+GET  https://nessfi-assignment.onrender.com/api/auth/logout
 
 
 ### create products
-POST http://localhost:3000/api/products/
+POST https://nessfi-assignment.onrender.com/api/products/
 Content-Type: application/json
 
 { 
@@ -40,15 +40,15 @@ Content-Type: application/json
 }
 
 ### get all products
-GET http://localhost:3000/api/products/
+GET https://nessfi-assignment.onrender.com/api/products/
 
 
 ### get product by id 
-GET http://localhost:3000/api/products/685dca4d75061812b06de07b
+GET https://nessfi-assignment.onrender.com/api/products/685dca4d75061812b06de07b
 
 
 ### update product
-PUT http://localhost:3000/api/products/685dca4d75061812b06de07b
+PUT https://nessfi-assignment.onrender.com/api/products/685dca4d75061812b06de07b
 Content-Type: application/json
 
 { 
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 
 ### delete product
-DELETE http://localhost:3000/api/products/685dca4d75061812b06de07b
+DELETE https://nessfi-assignment.onrender.com/api/products/685dca4d75061812b06de07b
 
 ###
-GET http://localhost:3000/api/auth/authenticate/
+GET https://nessfi-assignment.onrender.com/api/auth/authenticate/

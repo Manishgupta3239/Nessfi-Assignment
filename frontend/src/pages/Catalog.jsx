@@ -11,7 +11,7 @@ export default function Catalog() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/api/products?page=${page}&limit=${limit}`, {
+      const res = await axios.get(`https://nessfi-assignment.onrender.com/api/products?page=${page}&limit=${limit}`, {
         withCredentials: true,
       });
       setProducts(res.data.products);
@@ -29,7 +29,7 @@ export default function Catalog() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
     try {
-      await axios.delete(`http://localhost:3000/api/products/${id}`, {
+      await axios.delete(`https://nessfi-assignment.onrender.com/api/products/${id}`, {
         withCredentials: true,
       });
       fetchProducts();
@@ -41,7 +41,7 @@ export default function Catalog() {
 
   const handleLogout = async() => {
     try{
-        await axios.get("http://localhost:3000/api/auth/logout",{
+        await axios.get("https://nessfi-assignment.onrender.com/api/auth/logout",{
           withCredentials:true
         })
     navigate("/login");

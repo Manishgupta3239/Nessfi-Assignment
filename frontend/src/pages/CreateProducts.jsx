@@ -39,7 +39,7 @@ export default function CreateProduct() {
         tags: formData.tags.split(",").map((tag) => tag.trim()),
       };
       console.log(payload)
-      await axios.post("http://localhost:3000/api/products/", payload, {
+      await axios.post("https://nessfi-assignment.onrender.com/api/products/", payload, {
         withCredentials:true
       });
 

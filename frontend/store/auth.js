@@ -7,7 +7,7 @@ export const useAuthStore = create((set) => ({
 
   verify: async() => {
     try{
-        const res = await axios.get("http://localhost:3000/api/auth/authenticate/",{
+        const res = await axios.get("https://nessfi-assignment.onrender.com/api/auth/authenticate/",{
             withCredentials: true
         });
         console.log(res.data.success)

@@ -11,7 +11,7 @@ export function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/api/auth/signup", { name, email, password },{
+      await axios.post("https://nessfi-assignment.onrender.com/api/auth/signup", { name, email, password },{
         withCredentials : true
       });
       navigate("/");

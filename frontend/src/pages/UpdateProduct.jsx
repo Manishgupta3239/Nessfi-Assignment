@@ -22,7 +22,7 @@ export default function UpdateProduct() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/products/${id}`, {
+        const res = await axios.get(`https://nessfi-assignment.onrender.com/api/products/${id}`, {
           withCredentials:true
         });
         const data = res.data.product;
@@ -59,7 +59,7 @@ export default function UpdateProduct() {
         images: formData.images.split(",").map((url) => url.trim()),
         tags: formData.tags.split(",").map((tag) => tag.trim()),
       };
-      await axios.put(`http://localhost:3000/api/products/${id}`, payload, {
+      await axios.put(`https://nessfi-assignment.onrender.com/api/products/${id}`, payload, {
         withCredentials:true
       });
       alert("Product updated successfully");
